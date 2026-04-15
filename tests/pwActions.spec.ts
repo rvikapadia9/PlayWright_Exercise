@@ -123,7 +123,7 @@ test.only('CheckBox Actions',async({page})=>{
     await page.waitForTimeout(5000);
  
 
-//7. Select the check box based on the Label
+//7. Select the check box based on the Label 
 const weekname:string="Friday";
 
 for(const label of days)
