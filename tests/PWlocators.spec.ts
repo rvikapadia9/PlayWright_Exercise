@@ -59,4 +59,3 @@ await expect(page.getByTestId("profile-email")).toHaveText("john.doe@example.com
 await expect(page.getByTestId("profile-name")).toHaveText("John Doe");
 
 });
-

@@ -20,7 +20,8 @@ test("Multi Select Drop down",async ({page})=>{
     const optionsText:string[]=(await dropdownOptions.allTextContents()).map(text=>text.trim());   
     console.log(optionsText)
 
-    expect(optionsText).toContain('Green'); // Check if the array contains "Green"
+    expect(optionsText).toContain('Green'); 
+    // Check if the array contains "Green"
 
 
     //4) printing options from the drop down
@@ -29,9 +30,5 @@ test("Multi Select Drop down",async ({page})=>{
     {
         console.log(option);
     }
-
-
-  
-
     await page.waitForTimeout(5000);
 })

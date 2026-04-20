@@ -18,14 +18,13 @@ test("Single Select Drop down",async ({page})=>{
     await expect(dropdownOptions).toHaveCount(10);
 
 
-    //3) check an option present in the dropdown
+    // 3) check an option present in the dropdown
 
     const optionsText:string[]=(await dropdownOptions.allTextContents()).map(text=>text.trim());   
     console.log(optionsText)
 
     expect(optionsText).toContain('Japan'); // Check if the array contains "Japan"
-
-
+    
     //4) printing options from the drop down
     for(const option of optionsText)
     {
