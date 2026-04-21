@@ -18,7 +18,7 @@ page.locator(css/xpath)
 
 */
 
-import{test,expect,Locator} from "@playwright/test"
+import{test,expect,Locator} from "@Playwright/test"
 
 
 test("Verify CSS Locators",async ({page})=>{
