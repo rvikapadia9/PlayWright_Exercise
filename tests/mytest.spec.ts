@@ -1,4 +1,4 @@
-import{test,expect} from "@playwright/test"
+import{test,expect} from "@Playwright/test"
 
 test("Verify Page title",async({page})=>{
  await page.goto("https://playwright.dev/");

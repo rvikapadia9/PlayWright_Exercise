@@ -4,7 +4,7 @@ DOM- Document Object model
  
 */
 
-import { test, expect, Locator } from "@playwright/test";
+import { test, expect, Locator } from "@Playwright/test";
 import { chromium } from "playwright-extra";
 // @ts-ignore
 import stealth from "puppeteer-extra-plugin-stealth";

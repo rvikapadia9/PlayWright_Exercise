@@ -4,7 +4,7 @@ DOM- Document Object model
  
 */
 
-import{test,expect, Locator} from "@playwright/test"
+import{test,expect, Locator} from "@Playwright/test"
 test("Verify Playwright BuiltIn Locators",async({page})=>{
 await page.goto("https://demo.nopcommerce.com/");
 //1.page.getbyAltText()-  identifies images(and similar elements) based on the alt atributes

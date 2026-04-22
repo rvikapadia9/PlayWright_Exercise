@@ -1,4 +1,4 @@
-import {test, expect, Locator} from "@playwright/test";
+import {test, expect, Locator} from "@Playwright/test";
 
 
 test("Multi Select Drop down",async ({page})=>{
