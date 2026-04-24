@@ -28,6 +28,7 @@ test('BlazeDemo Flight Booking Flow - Select Lowest Price Flight', async ({ page
 
   // 7. Log and sort the prices
   console.log('Flight Prices:', prices);
+  
   const sortedPrices = [...prices].sort(); // String sort
   const lowestPrice = sortedPrices[0];
   console.log('Lowest Price:', lowestPrice);
