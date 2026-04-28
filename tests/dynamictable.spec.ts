@@ -1,4 +1,4 @@
-import { test, expect,Locator } from '@playwright/test';
+import { test, expect,Locator } from '@Playwright/test';
 
 test("Verify Chrome CPU load in dynamic table", async({page})=>{
 

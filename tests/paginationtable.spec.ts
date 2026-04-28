@@ -1,4 +1,4 @@
-import { test, expect,Locator } from '@playwright/test';
+import { test, expect,Locator } from '@Playwright/test';
 
 test("Read data from all the table pages", async ({page})=>{
 
