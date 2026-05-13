@@ -1,4 +1,4 @@
-import {test,expect,Locator } from "@Playwright/test"
+import {test,expect,Locator } from "@playwright/test"
 
 test("Autosuggest dropdown", async({page})=>{
 
@@ -11,7 +11,7 @@ test("Autosuggest dropdown", async({page})=>{
     const options:Locator=page.locator("ul>li");
 
     const count=await options.count();
-    console.log("Number of suggested options:", count);  //8
+    console.log("Number of suggested opti4ons:", count);  //8
 
     // printing all the suggested options in the console
 
