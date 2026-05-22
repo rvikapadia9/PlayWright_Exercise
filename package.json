@@ -10,10 +10,13 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.59.0",
-    "@types/node": "^25.5.0"
+    "@types/node": "^25.5.0",
+    "allure-playwright": "^3.9.0"
   },
   "dependencies": {
+    "csv-parse": "^6.2.1",
     "playwright-extra": "^4.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   }
 }

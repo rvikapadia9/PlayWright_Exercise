@@ -22,7 +22,14 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['html', { open: 'always', 'outputFolder': 'html-report' }],
+  ['list'],
+  ['line'],
+  ['dot'],
+  ['junit', { 'outputFile': 'results/PW-results.xml' }],
+  ['json', { 'outputFile': 'results/PW-results.json' }],
+  ['allure-playwright', { 'outputFolder': 'allure-results' }]
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -31,8 +38,8 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
-    video:'retain-on-failure',  //on-failure//off//on
-    
+    video: 'retain-on-failure',  //on-failure//off//on
+
     /* Set viewport to null and pass --start-maximized to launch the browser maximized */
     // viewport: null,
     // launchOptions: {
@@ -47,16 +54,16 @@ export default defineConfig({
       // use: { ...devices['Desktop Chrome'], viewport: null, deviceScaleFactor: undefined },
       use: { ...devices['Desktop Chrome'] },
     },
-/*
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-   
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },*/
+    /*
+        {
+          name: 'firefox',
+          use: { ...devices['Desktop Firefox'] },
+        },
+       
+        {
+          name: 'webkit',
+          use: { ...devices['Desktop Safari'] },
+        },*/
 
     /* Test against mobile viewports. */
     // {
